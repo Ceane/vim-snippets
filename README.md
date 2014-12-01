@@ -1,7 +1,8 @@
 vim-snippets
 ==================
 
-![Example](http://i.imgur.com/DnN4Wbi.gif)
+<img src="http://i.imgur.com/DnN4Wbi.gif" width="50%" />
+
 
 A set of snippets for Vim to work with Facebook's [React](http://facebook.github.io/react/) library, forked from [justinj/vim-react-snippets](https://github.com/justinj/vim-react-snippets). This repo has been remixed  with the ES6 syntax, along with JSHint comments and licensing.
 
