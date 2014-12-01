@@ -1,29 +1,29 @@
 snippet cs
 	var cx = React.addons.classSet;
 snippet cdm
-	componentDidMount: function() {
+	componentDidMount() {
 		${1}
-	},
+	}
 snippet cdup
-	componentDidUpdate: function(prevProps, prevState) {
+	componentDidUpdate(prevProps, prevState) {
 		${1}
-	},
+	}
 snippet cwm
-	componentWillMount: function() {
+	componentWillMount() {
 		${1}
-	},
+	}
 snippet cwr
-	componentWillReceiveProps: function(nextProps) {
+	componentWillReceiveProps(nextProps) {
 		${1}
-	},
+	}
 snippet cwun
-	componentWillUnmount: function() {
+	componentWillUnmount() {
 		${1}
-	},
+	}
 snippet cwu
-	componentWillUpdate: function(nextProps, nextState) {
+	componentWillUpdate(nextProps, nextState) {
 		${1}
-	},
+	}
 snippet cx
 	cx({
 		${1}: ${2}
@@ -31,17 +31,17 @@ snippet cx
 snippet fup
 	forceUpdate(${1:callback});
 snippet gdp
-	getDefaultProps: function() {
+	getDefaultProps() {
 		return {
 			${1}
 		};
-	},
+	}
 snippet gis
-	getInitialState: function() {
+	getInitialState() {
 		return {
 			${1}: ${2}
 		};
-	},
+	}
 snippet ism
 	isMounted()
 snippet jsx
@@ -61,7 +61,7 @@ snippet rcc
 
 	var ${1:ClassName} = React.createClass({
 
-		render: function() {
+		render() {
 			return (
 				${0:<div />}
 			);
@@ -71,7 +71,7 @@ snippet rcc
 
 	module.exports = $1;
 snippet ren
-	render: function() {
+	render() {
 		return (
 			${1:<div />}
 		);
@@ -81,12 +81,82 @@ snippet sst
 		${1}: ${2}
 	});
 snippet scu
-	shouldComponentUpdate: function(nextProps, nextState) {
+	shouldComponentUpdate(nextProps, nextState) {
 		${1}
-	},
+	}
 snippet props
 	this.props.${1}
 snippet state
 	this.state.${1}
 snippet trp
 	transferPropsTo(${1});
+snippet xvar
+	/**
+	 */
+	export var ${1} = ${2};
+snippet xmix
+	/**
+	 * @mixin $1
+	 */
+	export var ${1:mixinName} = {
+		${2}
+	};
+snippet xfn
+	/**
+	 * @method $1
+	 */
+	export function ${1:methodName}(${2}) {
+		${3}
+	}
+snippet xcl
+	/**
+	 * @class $1
+	 */
+	export class ${1:className} {
+		constructor() {
+			${2}
+		}
+	}
+snippet imp 
+	import ${1} from '${2}';
+snippet impm 
+	import {${1}} from '${2}';
+snippet imas
+	import * as ${1} from '${2}';
+snippet cons
+	constructor() {
+		${1}
+	}
+snippet meth
+	/**
+	 * @method $1
+	 */
+	${1:methodName}(${2}) {
+		${3}
+	}
+snippet mit
+	/**
+	 * Copyright (c) 2015 ${1}
+	 *
+	 * Permission is hereby granted, free of charge, to any person obtaining a copy
+	 * of this software and associated documentation files (the "Software"), to deal
+	 * in the Software without restriction, including without limitation the rights
+	 * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	 * copies of the Software, and to permit persons to whom the Software is
+	 * furnished to do so, subject to the following conditions:
+	 *
+	 * The above copyright notice and this permission notice shall be included in
+	 * all copies or substantial portions of the Software.
+	 *
+	 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	 * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	 * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	 * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	 * THE SOFTWARE.
+	 */
+snippet copyr
+	/**
+	 * Copyright (c) 2015 ${1}. All Rights Reserved.
+	 */
