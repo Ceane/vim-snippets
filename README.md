@@ -1,7 +1,9 @@
-vim-react-snippets
+vim-snippets
 ==================
 
-A set of snippets for Vim to work with Facebook's [React](http://facebook.github.io/react/) library.
+![Example](http://i.imgur.com/DnN4Wbi.gif)
+
+A set of snippets for Vim to work with Facebook's [React](http://facebook.github.io/react/) library, forked from [justinj/vim-react-snippets](https://github.com/justinj/vim-react-snippets). This repo has been remixed  with the ES6 syntax, along with JSHint comments and licensing.
 
 A direct port of the awesome snippets from 
 [jgebhardt/sublime-react](https://github.com/jgebhardt/sublime-react).
@@ -30,26 +32,3 @@ Bundle "garbas/vim-snipmate"
 " Other sets of snippets (optional):
 Bundle "honza/vim-snippets"
 ```
-
-Usage
-=====
-
-Within any Javascript or JSX file, you should be able to do the following:
-
-(in insert mode)
-```
-gdp<Tab>
-```
-
-expanding to
-
-```
-getDefaultProps: function() {
-    return {
-
-    };
-},
-```
-
-And a bunch of others!
-Check `snippets/javascript.snippets` to see the full list.
